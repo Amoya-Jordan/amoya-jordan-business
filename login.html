@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CIT2011 IA#2 | Amoya Jordan | 2302539 -->
+  <title>Login &mdash; Auriva</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-brand">AURI<span>VA</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Login Form — JS Q2b & Q2c: event listener + form validation in script.js -->
+  <section class="form-section">
+    <h2>Welcome Back</h2>
+    <p class="form-subtitle">Sign in to your Auriva account</p>
+
+    <form id="login-form" novalidate>
+
+      <!-- Q3b: label + for attribute — accessibility -->
+      <div class="form-group">
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" name="login-username" placeholder="your_username" required>
+        <!-- JS Q2a: error injected here by showError() -->
+      </div>
+
+      <div class="form-group">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" name="login-password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Sign In</button>
+        <a href="register.html" class="btn btn-outline">Create Account</a>
+      </div>
+
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 <span>Auriva</span> Essential Oils &nbsp;&middot;&nbsp; Pure. Natural. Yours.</p>
+  </footer>
+
+</body>
+</html>

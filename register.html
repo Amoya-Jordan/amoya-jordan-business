@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CIT2011 IA#2 | Amoya Jordan | 2302539 -->
+  <title>Register &mdash; Auriva</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-brand">AURI<span>VA</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Register Form — JS Q2b & Q2c: event listener + validation in script.js -->
+  <section class="form-section">
+    <h2>Create Account</h2>
+    <p class="form-subtitle">Join the Auriva community</p>
+
+    <form id="register-form" novalidate>
+
+      <div class="form-group">
+        <label for="reg-name">Full Name</label>
+        <input type="text" id="reg-name" name="reg-name" placeholder="Jane Smith" required>
+      </div>
+
+      <div class="form-group">
+        <label for="reg-dob">Date of Birth</label>
+        <input type="date" id="reg-dob" name="reg-dob" required>
+      </div>
+
+      <div class="form-group">
+        <label for="reg-email">Email Address</label>
+        <!-- JS Q2c: isValidEmail() checks format with regex -->
+        <input type="email" id="reg-email" name="reg-email" placeholder="jane@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="reg-username">Username</label>
+        <input type="text" id="reg-username" name="reg-username" placeholder="your_username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="reg-password">Password</label>
+        <!-- JS Q2c: validates min 6 characters -->
+        <input type="password" id="reg-password" name="reg-password" placeholder="Min. 6 characters" required>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Register</button>
+        <a href="login.html" class="btn btn-outline">Sign In Instead</a>
+      </div>
+
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 <span>Auriva</span> Essential Oils &nbsp;&middot;&nbsp; Pure. Natural. Yours.</p>
+  </footer>
+
+</body>
+</html>
